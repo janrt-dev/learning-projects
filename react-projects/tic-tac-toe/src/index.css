@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply m-5 p-0 font-sans;
+	}
+	.square {
+		@apply bg-[#fff] border border-[#999] border-solid text-base font-bold leading-8 mr-minus_1 mt-minus_1 p-0 text-center w-9 h-9 float-left;
+	}
+
+	.board-row:after {
+		/*	@apply	clear-both content-none table */
+
+		clear: both;
+		content: '';
+		display: table;
+
+	}
+	.status {
+		margin-bottom: 10px;
+	}
+
+}
+
